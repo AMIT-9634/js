@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class object</title>
+</head>
+<body>
+   <script>
+console.log("this is not working");
+class student{
+constructor(firstname, lastname, rollno, age, standard, subject){
+(this .name = {firstname:firstname,
+    lastname:lastname,
+})
+(this.rollno = rollno);
+this.standard = standard;
+this.age = age;
+this.subject = subject;
+}
+updateSubject(newSubject){
+    this.subject = newSubject;
+}
+
+}
+let s1 = new student("kanchan", "rawat", "23", "web dev", "very high");
+let s2 = new student("amit", "rawat", "28", "web dev", "very high");
+
+console.log(s1);
+console.log(s2);
+
+console.table(s1);
+s1.updateSubject("graphics");
+console.table(s1);
+console.table(s2);
+
+
+
+
+
+
+   </script> 
+</body>
+</html>
