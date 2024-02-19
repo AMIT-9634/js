@@ -1,0 +1,150 @@
+/* margin 0
+padding o */
+
+
+.five {
+    font-weight: 5rem;
+    height: fit-content;
+    text-decoration: solid;
+    height: 3 rem;
+    font-style: normal;
+    font-size: large;
+    text-align: center;
+    font-size-adjust: inherit;
+    color: brown;
+}
+
+.tam {margin-right: 470px;
+    margin-left: 10px;
+    color: brown;
+    font-style: italic;
+    font-size: xx-large;
+    justify-content: center;
+
+
+}
+
+.guys {
+    padding-top: 25%;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: xx-large;
+}
+
+
+.career {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/five.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu {
+    margin-right: 400px;
+    color: brown;
+text-transform: capitalize;
+    font-size: xx-large;
+    justify-content: centerS ;
+    align-items: center;
+    display: flex;
+}
+
+.back {
+    width: 100%;
+    height: 300px;
+    background-image:url(img/iiii.jpg);
+    text-align: center;
+
+}
+
+.back h1 {
+    margin-left: 650px;
+    margin-bottom: 200px;
+    width: 5%;
+    height: 25px;
+    color: aliceblue;
+    position: relative;
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+
+}
+.food{margin-top: 50px;
+    margin-left: 100px;
+    color: black;
+    display: flex;
+justify-items: baseline;
+    font-size: 20px;
+
+
+
+}
+
+body {
+    /* background-color:#1d1d1d !important; */
+    font-family: "Asap", sans-serif;
+    color:#989898;
+    margin:10px;
+    font-size:16px;
+  }
+  
+  #demo {
+    height:80%;
+    position:relative;
+    overflow:hidden;
+  }
+  
+  
+  .green{
+    background-color:#6fb936;
+  }
+          .thumb{
+              margin-bottom: 30px;
+          }
+          
+          .page-top{
+              margin-top:85px;
+          }
+  
+     
+  img.zoom {
+      width: 100%;
+      height: 200px;
+      border-radius:5px;
+      object-fit:cover;
+      /* -webkit-transition: all .3s ease-in-out; */
+      /* -moz-transition: all .3s ease-in-out; */
+      /* -o-transition: all .3s ease-in-out; */
+      /* -ms-transition: all .3s ease-in-out; */
+  }
+          
+   
+  .transition {
+      -webkit-transform: scale(1.2); 
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+  }
+      .modal-header {
+     
+       border-bottom: none;
+  }
+      .modal-title {
+          color:#000;
+      }
+      .modal-footer{
+        display:none;  
+      }
+
+.guide{
+    text-align: center;
+    color: red;
+}
+.how{font-size: xx-large;
+    text-align: center;
+    margin-top: 60px;
+    color: black;
+    
+}
+  
