@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>stopwatch & countdown</title>
+    </head>
+    <body>
+        <h1>stopwatch</h1>
+        <div id="stopwatch">00:00:00</div>
+        <button onclick="startStopwatch()">start</button>
+        <button onclick="stoptStopwatch()">stop</button>
+        <button onclick="resetStopwatch()">reset</button>
+
+        <h1>countdown</h1>
+        <div id="countdwon">00:00:00:</div>
+        <input type="text" id="startcuntdwonInput"
+            placeholder="enter time in second">
+        <button onclick="startcountdown()">startcountdown</button>
+        <button onclick="stopcountdown()">stopcountdown</button>
+
+        <script>
+    let stopwatchInterval;
+    let countdownInterval;
+
+    let stopwatchSeconds = 0;
+    let stopwatchMinutes = 0;
+    let stopwatchHours = 0;
+
+    function startstopwatch(){
+        stopwatchInterval = setInterval(updateStopwatch,1000);
+    }
+    function stopwatch(){
+        clearInterval(stopwatchInterval);
+    }
+    function resetwatch(){
+        clearInterval(stopwatchInterval);
+        stopwatchSeconds = 0;
+        stopwatchMinutes = 0;
+        stopwatchHours = 0;
+        document.getElementById(stopwatch).innerHTML ="00:00:00"
+    }
+
+    function updateStopwatch(){
+        stopwatchSeconds++;
+        If(stopwatchSeconds === 60);{
+            stopwatchSeconds = 0;
+            stopwatchMinutes++;
+            if(stopwatchMinutes===60){
+                    stopwatchMinutes = 0;
+                    stopwatchHours++;  
+                }
+            
+        }
+        document.getElementById("stopwatch").innerHTML= formatTime(stopwatchHours)+":"+formatTime(stopwatchMinutes)+":"+formatTime(stopwatchSeconds);
+
+    }
+    function formatTime(time){
+        return time < 10 ?"0" + time:time;
+    }
+
+    function startcountdown(){
+        let countdownTime = parseInt(document.getElementById("countdownTime").value);
+        countdownInterval= setInterval(function(){
+            if(countdownTime <=0){
+                clearInterval(countdownInterval);
+                alert("countdown complete");
+                return;
+            }
+            countdownTime--;
+            document.getElementById("stopwatch").innerText = formatTime(Math.floor(countdownTime/3600))+":"+formatTime(Math.floor((countdownTime % 3600)/60))+":"+formatTime(countdownTime % 60);
+        },1000);
+    }
+  function stopcountdown(){
+    clearInterval(countdownInterval);
+  }
+</script>
+    </body>
+</html>
